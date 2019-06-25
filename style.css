@@ -1,0 +1,314 @@
+/* 
+vars
+*/
+/*
+mixins
+*/
+/* 
+Fonts - 
+*/
+body {
+  background: #333;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 10px;
+  color: #010000;
+  font-weight: 500;
+  font-style: normal; }
+  @media (max-width: 900) {
+    body {
+      font-size: 7px !important; } }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  height: 75px;
+  padding: 40px 0px 0px; }
+  header a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    transition: all .4s; }
+    header a:hover {
+      opacity: 0.75; }
+  header .hostinger__logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    header .hostinger__logo img {
+      max-width: 140px; }
+  header .hostinger__menu {
+    position: absolute;
+    top: 50%;
+    left: unset;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media (max-width: 1200px) {
+      header .hostinger__menu {
+        left: unset;
+        right: 15px; } }
+    header .hostinger__menu ul .hostinger__menu-i {
+      display: none; }
+      @media (max-width: 1200px) {
+        header .hostinger__menu ul .hostinger__menu-i {
+          display: block !important; } }
+    header .hostinger__menu ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 1rem; }
+      @media (max-width: 1200px) {
+        header .hostinger__menu ul li {
+          display: none; } }
+    li header .hostinger__menu ul:hover {
+      color: #ffffff;
+      opacity: 0.75;
+      text-transform: none; }
+    header .hostinger__menu ul a span {
+      color: #FFC800;
+      position: absolute;
+      transform: translate(0, -50px);
+      font-size: 10px !important;
+      letter-spacing: 0;
+      line-height: 2.4rem;
+      display: flex;
+      font-weight: 600; }
+  header nav,
+  header nav ul,
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem; }
+
+.hostinger__offer {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between; }
+  @media (max-width: 1024px) {
+    .hostinger__offer {
+      padding-top: 0px;
+      justify-content: space-around; } }
+  .hostinger__offer-countdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .hostinger__offer-countdown-holder {
+      display: flex; }
+    .hostinger__offer-countdown-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 9em;
+      margin: 0 0.5em; }
+      @media (max-width: 900px) {
+        .hostinger__offer-countdown-item {
+          min-width: 7em; } }
+      @media (max-width: 600px) {
+        .hostinger__offer-countdown-item {
+          min-width: 5em; } }
+      .hostinger__offer-countdown-item p {
+        color: #ffffff;
+        font-size: 2.35em;
+        font-weight: 700;
+        margin: 5px 5px 0px 5px; }
+      .hostinger__offer-countdown-item p:last-child {
+        font-size: 1.15em; }
+  .hostinger__offer-triangle--left {
+    border-left: 1.5em solid #FC5156;
+    margin-left: .75em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent; }
+  .hostinger__offer-triangle--right {
+    border-right: 1.5em solid #FC5156;
+    margin-left: .75em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent; }
+  .hostinger__offer-left {
+    justify-content: flex-start;
+    align-items: center; }
+  .hostinger__offer-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 4rem;
+    margin: 0; }
+    @media (max-width: 1024px) {
+      .hostinger__offer-heading {
+        text-align: center; } }
+    .hostinger__offer-heading span {
+      color: #FC5156; }
+  .hostinger__offer-btn {
+    margin-top: 1.5em;
+    font-weight: 600;
+    background-position: center;
+    -webkit-transition: background .8s;
+    transition: background .8s;
+    background-color: #FC5156;
+    border: 1px solid #FC5156;
+    border-radius: 3px;
+    padding: 15px 20px;
+    color: #fff;
+    word-break: break-word;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer; }
+    @media (max-width: 1024px) {
+      .hostinger__offer-btn {
+        margin-left: auto;
+        margin-right: auto; } }
+  .hostinger__offer-right {
+    justify-content: flex-end;
+    align-items: center; }
+
+.hostinger__benefits {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (max-width: 1200px) {
+    .hostinger__benefits {
+      padding-top: 50px;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column; } }
+  .hostinger__benefits-item {
+    display: flex;
+    align-items: center;
+    min-width: fit-content; }
+    .hostinger__benefits-item p {
+      align-items: center !important;
+      color: #ffffff;
+      display: flex !important;
+      font-size: 1.4em;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .hostinger__benefits-item i {
+      color: #7EC377;
+      margin-right: 5px !important;
+      font-size: 20px !important;
+      font-weight: 900; }
+
+.hostinger__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .hostinger__price-box {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #ffffff; }
+    @media (max-width: 1024px) {
+      .hostinger__price-box {
+        font-size: 2.5em; } }
+    .hostinger__price-box--holder {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .hostinger__price-box--holder-small {
+        font-size: 2em;
+        font-weight: 700; }
+      .hostinger__price-box--holder-per {
+        font-size: 1.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        margin: .3em; }
+    .hostinger__price-box--currency {
+      font-size: 3em;
+      font-weight: 700;
+      margin-top: .2em; }
+    .hostinger__price-box--symbol {
+      font-size: 9em;
+      font-weight: 700;
+      line-height: .8em; }
+  .hostinger__price-discount {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .hostinger__price-discount-save {
+      background: #FC5156;
+      font-size: 20px;
+      padding: 10px 30px;
+      color: #fff;
+      font-weight: 600; }
+    .hostinger__price-discount-arrow {
+      background: #FC5156;
+      transform: rotate(45deg);
+      width: 20px;
+      height: 20px;
+      margin-top: -10px; }
+
+.hostinger {
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%; }
+  @media (max-width: 1024px) {
+    .hostinger {
+      height: 100%; } }
+
+.container {
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 200px;
+  margin-left: 200px; }
+  @media (max-width: 900px) {
+    .container {
+      margin-right: 100px;
+      margin-left: 100px; } }
+  @media (max-width: 600px) {
+    .container {
+      margin-right: 10px;
+      margin-left: 10px; } }

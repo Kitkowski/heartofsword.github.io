@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body class="hostinger">
+    <div >
+      <header class="hostinger__header  container">
+
+        <div class="hostinger__logo">
+        <img src="img/logo.png" alt="Logo" />
+        </div>
+ 
+        <nav class="hostinger__menu">
+          <ul>
+          <li class="hostinger__menu-i">
+             <i class="material-icons" >menu</i>
+           </li>
+           <li>
+             <a class="hostinger__menu-li" href="#" >New Hosting</a>
+           </li>
+           <li>
+             <a class="hostinger__menu-li hostinger__menu-li--active"  href="#">Cloud Hosting
+             <span class="on-sale ">AKCIJA</span></a>
+           </li>
+           <li>
+             <a class="hostinger__menu-li"  href="#">VPS Hosting</a>
+           </li>
+           <li>
+             <a class="hostinger__menu-li"  href="#">Domain Checker</a>
+           </li>
+           <li>
+             <a class="hostinger__menu-li"  href="#">Website Builder</a>
+           </li>
+           </ul>
+        </nav>
+       
+       </header>
+       <section class="hostinger__body  container">
+        <div class="hostinger__offer">
+          <div class="hostigner__offer-left">
+              <h1 class="hostinger__offer-heading">New Year Offer<br /> <span>82% OFF</span> Web Hosting</h1>
+              
+              <div class="hostinger__offer-countdown">
+                <div class="hostinger__offer-triangle--left"></div>
+                <div class="hostinger__offer-countdown-holder">
+                  <div class="hostinger__offer-countdown-item"><p>00</p>
+                  <p>DAYS</p>
+                  </div>
+                  <div class="hostinger__offer-countdown-item"><p>16</p>
+                  <p>HOURS</p>
+                  </div>
+                  <div class="hostinger__offer-countdown-item"><p>18</p>
+                  <p>MINUTES</p>
+                  </div>
+                  <div class="hostinger__offer-countdown-item"><p>29</p>
+                  <p>SECONDS</p>
+                  </div>
+                </div>
+                <div class="hostinger__offer-triangle--right"></div>
+              </div>
+              <button class="hostinger__offer-btn">GET STARTED NOW</button>
+            </div>
+          <div class="hostigner__offer-right">
+
+            <div class="hostinger__price">
+              <div class="hostinger__price-discount">
+                <div class="hostinger__price-discount-save">SAVE 82%</div>
+                <div class="hostinger__price-discount-arrow"></div>
+              </div>
+              <div class="hostinger__price-box">
+                <div class="hostinger__price-box--currency">$</div>
+                <div class="hostinger__price-box--symbol">1</div>
+                <div class="hostinger__price-box--holder">
+                  <div class="hostinger__price-box--holder-small">45</div>
+                  <div class="hostinger__price-box--holder-per">/mo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="hostinger__benefits">
+          <div class="hostinger__benefits-item">
+            <i class="material-icons hostinger__benefits-icon">check</i>
+            <p class="hostinger__benefits-text">Guaranteed 99.9% Uptime</p>
+          </div>
+           <div class="hostinger__benefits-item">
+            <i class="material-icons hostinger__benefits-icon">check</i>
+            <p class="hostinger__benefits-text">Superior Speed </p>
+          </div>
+          <div class="hostinger__benefits-item">
+            <i class="material-icons hostinger__benefits-icon">check</i>
+            <p class="hostinger__benefits-text">24/7 Support Chat</p>
+          </div>
+          <div class="hostinger__benefits-item">
+            <i class="material-icons hostinger__benefits-icon">check</i>
+            <p class="hostinger__benefits-text">30-Day Money-Back Guarantee</p>
+          </div>
+        </div>
+        
+        
+      </section>
+    </div>
+    
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
